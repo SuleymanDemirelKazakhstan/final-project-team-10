@@ -1,10 +1,12 @@
 # CSS 410 Research tools and methods
 ## Team members
-+ **Jet Lee** - Backend Developer (GitHub account: *jetlee*)
-+ **Jacky Chan** - Frontend Developer (GitHub account: *jackychan*)
++ **Sergey Kirichenko** - Frontend Developer (GitHub account: *jetlee*)
++ **Darkhan Myrzabek** - Backend Developer (GitHub account: *jackychan*)
++ **Adilbek Karmanov** - Machine learning Engineer (GitHub account: *kdiAAA*)
++ **Maxim Kolesnikov** -  Machine learning Engineer (GitHub account: *jetlee*)
 
 ## Project
-This project is yet-another clone of Instagram
+-
 
 ## Technologies
-In our project we use **Laravel**, **VueJS**
+-
