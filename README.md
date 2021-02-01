@@ -6,7 +6,10 @@
 + **Maxim Kolesnikov** -  Machine learning Engineer (GitHub account: *macsifan*)
 
 ## Project
--
+- A web-service that colorize black&white pictures
 
 ## Technologies
--
+- DSML: PyTorch
+- Front: Angular, Tailwind
+- Back: Flask
+- UX/UI: Figma
