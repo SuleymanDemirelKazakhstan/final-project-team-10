@@ -15,4 +15,4 @@
 - UX/UI: Figma
 
 ## Our Slack community:
-https://join.slack.com/t/newworkspace-tbn5196/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvURXn_wXQ
+https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvURXn_wXQ
