@@ -19,3 +19,19 @@ https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvUR
 
 ## Timeline:
 https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
+
+## User Story
+
+User story: *Restoration of old photos and videos*
+
+As a user, 
+
+**I want to colorize old photos to save memories**
+
+As a user,
+
+**I want to colorize old photos to see them in color**
+
+As a user, 
+
+**I want to colorize old photos to make them relevant in the modern world**
