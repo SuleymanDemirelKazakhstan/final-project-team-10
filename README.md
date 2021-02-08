@@ -9,7 +9,7 @@
 - A web-service that colorize black&white pictures
 
 ## Technologies
-- DSML: PyTorch
+- DSML: PyTorch, OpenCV
 - Front: Angular, Tailwind
 - Back: Flask
 - UX/UI: Figma
