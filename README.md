@@ -16,3 +16,6 @@
 
 ## Our Slack community:
 https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvURXn_wXQ
+
+## Timeline:
+https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
