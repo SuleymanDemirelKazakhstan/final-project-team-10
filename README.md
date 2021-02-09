@@ -20,7 +20,7 @@ https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvUR
 ## Timeline:
 https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
 
-## User personas.
+## User Personas
 
 **Serikzhan.** He wants to colorize photos because he has photos of his great-grandmother and wants to keep them. He needs an easy and quick way to do it.
 
