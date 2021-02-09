@@ -20,6 +20,17 @@ https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvUR
 ## Timeline:
 https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
 
+## User personas.
+
+**Serikzhan.** He wants to colorize photos because he has photos of his great-grandmother and wants to keep them. He needs an easy and quick way to do it.
+
+**Saule.** It was a birthday and one of the guests decided to capture the moment by filming a video But the video was filmed in a black and white filter and valuable footage was lost. She needs a service that can recolor videos in excellent quality, because these memories are valuable to her.
+
+**Gulya apai.** She is far from technology, but she heard from her grandchildren about a service that makes black and white photos in color. She is not the most experienced PC user, so we need the most simple and not overloaded interface.
+
+**Aidana.** She is a DSML engineer and loves to study various projects in this topic. She needs a service related to her profession that can offer unique technological solutions.
+
+
 ## User Story
 
 User story: *Restoration of old photos and videos*
@@ -35,3 +46,5 @@ As a user,
 As a user, 
 
 **I want to colorize old photos to make them relevant in the modern world**
+
+
