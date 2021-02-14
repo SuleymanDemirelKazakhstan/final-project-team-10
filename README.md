@@ -20,6 +20,14 @@ https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvUR
 ## Timeline:
 https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
 
+## Page Decriptions
+
+| Page                            | Elements                                                                                                                                               |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Homepage /                      | 1. Main branding section 2. "Upload" section 3. Gallery section 4. About video decoding section 5. FAQ (Frequently Asked Questions) 6. Pricing section |
+| Profile /profile                | 1. Navbar 2. Items with actions 3. Pagination 4. Balance                                                                                               |
+| Video colorizing /profile/video | 1. Upload form 2. Payment options 3. Time left 4. Balance                                                                                              |
+
 ## Non-functional requirements:
 - The qualities of convertion must be good
 - The application must have feedback part
