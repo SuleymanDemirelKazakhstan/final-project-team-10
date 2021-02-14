@@ -51,7 +51,7 @@ As a user,
 
 ## Sitemap
 
-https://i.ibb.co/vQvnnCG/image.png
+<img src="https://i.ibb.co/vQvnnCG/image.png" alt="image" border="0">
 
 
 ## Page Decriptions
