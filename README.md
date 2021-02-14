@@ -62,6 +62,10 @@ As a user,
 | Profile /profile                | 1. Navbar 2. Items with actions 3. Pagination 4. Balance                                                                                               |
 | Video colorizing /profile/video | 1. Upload form 2. Payment options 3. Time left 4. Balance                                                                                              |
 
+## Wireframes (Prototype)
+
+<img src="https://i.ibb.co/C1RwRGB/image.png>
+
 ## Non-functional requirements:
 - The qualities of convertion must be good
 - The application must have feedback part
