@@ -64,7 +64,7 @@ As a user,
 
 ## Wireframes (Prototype)
 
-<img src="https://i.ibb.co/C1RwRGB/image.png>
+<img src="https://i.ibb.co/C1RwRGB/image.png" alt="image" border="0">
 
 ## Non-functional requirements:
 - The qualities of convertion must be good
