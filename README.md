@@ -21,14 +21,13 @@ https://join.slack.com/t/team-10world/shared_invite/zt-lthcvuqv-5D9UL8JA5ovIXvUR
 https://www.notion.so/Thesis-Planning-4fb2ffc71be0467fb73dc03edcf0f2a2
 
 ## Non-functional requirements:
-- The frontend part must be done in Angular.js
-- The backend part must be done in Flask and Node.js
 - The qualities of convertion must be good
 - The application must have feedback part
 - The application must be hosted on services with good GPU qualities
-- The application must convert black-white to photos to colorized
+- The application must convert black-white to photos to colorized in 5 secs
 - The application must be responsive (work well and look good on all screen sizes)
 - The application must be able to support 100 simultaneous users
+- The application must have electronic payment methods
 
 ## Risks:
 - A trained model will not be able to show high results
