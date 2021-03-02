@@ -1,5 +1,5 @@
 ## Machine learning part:
-Karmanov Adilbek and Kolesnikov Maxim
+Adilbek Karmanov and Maxim Kolesnikov 
 - Find most suitable pre-trained models (Done)
 - Read research paper about self-attention GAN (Done)
 
