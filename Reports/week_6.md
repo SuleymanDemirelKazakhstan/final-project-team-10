@@ -6,3 +6,11 @@ Adilbek Karmanov and Maxim Kolesnikov
 Next step:
 - Learn about “colorfulness” metric in OpenCV
 - Find methods of combining two colorful images
+
+## Frontend Part
+Kirichenko Sergey
+-Started creating Landing page
+-At the moment we have: main screen, "Upload" field, Gallery, Section about video (can be deleted/modified)
+
+Next step:
+- Finalize landing page by creating other UI components
