@@ -14,3 +14,12 @@ Kirichenko Sergey
 
 Next step:
 - Finalize landing page by creating other UI components
+
+
+## Backend part:
+Myrzabek Darkhan
+- creating api for images
+- started flask documentation
+
+Next step:
+- waiting for the data
