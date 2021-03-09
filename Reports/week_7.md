@@ -1,5 +1,5 @@
 ## Machine learning part:
-Adilbek Karmanov and Maxim Kolesnikov 
+Adilbek Karmanov and Maxim Kolesnikov
 - Learn about “colorfulness” metric in OpenCV (Done)
 - Find methods of combining two colorful images (Partially Done)
 
