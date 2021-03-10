@@ -20,4 +20,6 @@ Myrzabek Darkhan
 
 
 Next step:
+- creating endpoints for data
+- checking it with postman
 
