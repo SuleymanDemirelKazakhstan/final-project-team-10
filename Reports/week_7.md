@@ -10,9 +10,14 @@ Next step:
 
 ## Frontend Part
 Kirichenko Sergey
+-  Created landing page markup
+-  Started developing personal page
+-  Developing API for photo transfer
 
 
 Next step:
+- Continue API developing
+- Understand how to store old and new photos from user
 
 
 ## Backend part:
