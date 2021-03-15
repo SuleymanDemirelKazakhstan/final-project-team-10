@@ -1,0 +1,33 @@
+two-up {
+  max-width: 900px;
+  margin: 0 auto;
+}
+two-up img {
+  max-width: 100%;
+}
+two-up:defined {
+
+}
+
+.my-two-up {
+  /* Color of the track & thumb */
+  --accent-colour: #0d5412;
+  /* Or you can set the two independently: */
+  --track-color: #0d5412;
+  --thumb-color: #0d5412;
+  /* Background of the thumb */
+  --thumb-background: #fff;
+  /* Size of the thumb */
+  --thumb-size: 35px;
+  /* Thickness of the bar */
+  --bar-size: 5px;
+  /* Touch-thickness of the bar */
+  --bar-touch-size: 30px;
+}
+
+
+
+
+body {
+  padding: 2rem;
+}
