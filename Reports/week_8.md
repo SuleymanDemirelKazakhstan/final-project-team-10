@@ -7,10 +7,15 @@ Adilbek Karmanov and Maxim Kolesnikov
 
 ## Frontend Part
 Kirichenko Sergey
+- Finished langing page
+- Created "Upload" component
+- Trying to find a method to store images
 
 
 
 Next step:
+- Find DB for data storing
+- Test upload feature with server and DB
 
 
 
