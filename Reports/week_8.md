@@ -21,6 +21,7 @@ Next step:
 
 ## Backend part:
 Myrzabek Darkhan
-
-
+- Test flask api requests on test data
+- Get,post,delete requests done
 Next step:
+- Waiting for the data to get from db
