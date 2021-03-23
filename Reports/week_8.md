@@ -19,5 +19,7 @@ Next step:
 
 ## Backend part:
 Myrzabek Darkhan
-
+- Created an API based on Node js to save photos in local folder
+- Writing endpoint to connect model with front
 Next step:
+- Make it possible for client to post image to model and wait request then get response from model
