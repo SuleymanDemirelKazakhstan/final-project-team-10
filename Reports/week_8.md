@@ -7,9 +7,13 @@ Adilbek Karmanov and Maxim Kolesnikov
 
 ## Frontend Part
 Kirichenko Sergey
+- Created an API based on Node.js + Muttler to transfer and save photos in a local folder.
+- Created a beta client to send multiple files at the same time
+- Fixed markup bugs
 
 Next step:
-
+- Perhaps we will already integrate the ML model with the client.
+- Layout of personal account
 
 
 
