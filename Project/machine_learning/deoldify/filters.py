@@ -1,6 +1,5 @@
 from numpy import ndarray
 from abc import ABC, abstractmethod
-from .critics import colorize_crit_learner
 from fastai.core import *
 from fastai.vision import *
 from fastai.vision.image import *
@@ -31,8 +30,6 @@ class BaseFilter(IFilter):
         return image
 
     def _scale_to_square(self, orig: PilImage, targ: int) -> PilImage:
-        # a simple stretch to fit a square really makes a big difference in rendering quality/consistency.
-        # I've tried padding to the square as well (reflect, symetric, constant, etc).  Not as good!
         targ_sz = (targ, targ)
         return orig.resize(targ_sz, resample=PIL.Image.BILINEAR)
 
@@ -88,11 +85,6 @@ class ColorizerFilter(BaseFilter):
     def _transform(self, image: PilImage) -> PilImage:
         return image.convert('LA').convert('RGB')
 
-    # This takes advantage of the fact that human eyes are much less sensitive to
-    # imperfections in chrominance compared to luminance.  This means we can
-    # save a lot on memory and processing in the model, yet get a great high
-    # resolution result at the end.  This is primarily intended just for
-    # inference
     def _post_process(self, raw_color: PilImage, orig: PilImage) -> PilImage:
         color_np = np.asarray(raw_color)
         orig_np = np.asarray(orig)
