@@ -19,6 +19,7 @@ Next step:
 ## Backend part:
 Myrzabek Darkhan
 
-
+- Creating the bridge between model and UI
+- Creating API
 Next step:
-
+- Testing API
