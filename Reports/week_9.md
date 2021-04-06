@@ -9,12 +9,12 @@ Next step:
 
 ## Frontend Part
 Kirichenko Sergey
-
+- We connected DSML part and client part using Api (Express + Multer)
+- Finished working on upload.service.ts, which provides all interaction with server
 
 Next step:
-
-
-
+- Finish "Uploader" component
+- Refactor HTTP request, because for now we don't get status on request (200/403/404)
 
 ## Backend part:
 Myrzabek Darkhan
