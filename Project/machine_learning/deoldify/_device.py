@@ -1,18 +1,8 @@
 import os
 from enum import Enum
-from enum import IntEnum
+from .device_id import DeviceId
 
-class DeviceId(IntEnum):
-    GPU0 = 0,
-    GPU1 = 1,
-    GPU2 = 2,
-    GPU3 = 3,
-    GPU4 = 4,
-    GPU5 = 5,
-    GPU6 = 6,
-    GPU7 = 7,
-    CPU = 99
-
+#NOTE:  This must be called first before any torch imports in order to work properly!
 
 class DeviceException(Exception):
     pass

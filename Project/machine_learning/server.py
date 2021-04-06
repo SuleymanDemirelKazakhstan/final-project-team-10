@@ -1,7 +1,9 @@
-from flask import Flask, request, jsonify,send_file
+from flask import Flask, request, jsonify,send_file,Response
 import json
 from PIL import Image 
-from celery import Celery
+# from celery import Celery
+import base64
+import io
 
 # from deoldify import device
 # from deoldify._device import DeviceId
@@ -14,28 +16,36 @@ app = Flask(__name__)
 # device.set(device=DeviceId.GPU0)
 # torch.backends.cudnn.benchmark=True
 # colorizer = get_image_colorizer()
-
 # render_factor=13
+
 
 @app.route('/')  # Функция обработчик для /
 def hello():
-    return "Hello, from Flask"
+    return "Ты пидор"
 
 @app.route("/colorize", methods=["POST"])
 def process_image():
-    files = request.files.to_dict(flat=False)['image']
-    # payload = request.form.to_dict()
-    for i, file in enumerate(files):
-        file.save(file.filename)
-    # print(file.filename)
+    try:
+        data = request.get_json(force=True)
+        images=[]
+        id=[]
+        print(data)
+        for i in data:
+            imgdata = base64.b64decode(i['image'])
+            stream = io.BytesIO(imgdata)
+            image = Image.open(stream).convert("RGB")
+            stream.close()
+            images.append(image)
+            id.append(i['id'])
+
+        for index,img in enumerate(images):
+            img.save("result/{}.jpg".format(index)) 
+
+        return '200'
+    except Exception as e:
+        return str(e)
+
     
-    # Read the image via file.stream
-    # file.save(file.filename)
-
-    img = Image.new(file.stream)
-
-
-    return send_file(files, mimetype='image/gif')# Кодируем ответ обратно в JSON
 
 
 
