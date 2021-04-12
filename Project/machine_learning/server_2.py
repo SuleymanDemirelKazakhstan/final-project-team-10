@@ -12,7 +12,7 @@ from celery.result import AsyncResult
 warnings.filterwarnings("ignore", category=UserWarning, message=".*?Your .*? set is empty.*?")
 
 
-celery_app = Celery('server', backend='redis://localhost:6379', broker='redis://localhost:6379')  # и брокер и база - redis
+celery_app = Celery('server_2', backend='redis://localhost:6379', broker='redis://localhost:6379')  # и брокер и база - redis
 app = Flask(__name__)
 
 
@@ -27,27 +27,27 @@ def hello():
     return "Hello, from Flask"
 
 @celery_app.task
-def colorize(images):
-    res=len(images)
-    for index,img in enumerate(images):
-        colorizer.get_transformed_image(img, render_factor).save("{}.jpg".format(index))   
-    return res
-
-
-@app.route("/colorize", methods=["POST"])
-def process_image():
-    data = request.get_json(force=True)
+def colorize_image(data):
     images=[]
     id=[]
     for i in data:
         imgdata = base64.b64decode(i['image'])
         stream = io.BytesIO(imgdata)
-        image = Image.open(stream).convert("RGBA")
+        image = Image.open(stream).convert("RGB")
         stream.close()
         images.append(image)
         id.append(i['id'])
 
-    task = colorize.delay(images) 
+
+    for index,img in enumerate(images):
+        colorizer.get_transformed_image(img, render_factor).save("result/{}.jpg".format(id[index]))   
+    return 'as'
+
+
+@app.route("/colorize", methods=["POST"])
+def process_image():
+    data = request.get_json(force=True)
+    task = colorize_image.delay(data) 
     response = {
         "task_id": str(task.id)
     }
@@ -72,6 +72,8 @@ def frequency_check_handler(task_id):
 
 
 if __name__ == '__main__':
-	# app.run(debug=True)
+    # app.run(debug=True)
     app.run("0.0.0.0", 8000)  # Запускаем сервер на 8000 порту
     
+    # celery -A server_2.celery_app worker -c 1
+    # waitress-serve --port=8000 server_2:app
