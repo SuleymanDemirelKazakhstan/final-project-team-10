@@ -1,6 +1,8 @@
 ## Machine learning part:
 Adilbek Karmanov and Maxim Kolesnikov
-- Refactor the video conversion code for our API (Continue)
+- Refactor the image conversion code for our API
+- Docker
+- Try to speedrun perfomance (Find a most suitable server platform with GPU)
 
 
 ## Frontend Part
