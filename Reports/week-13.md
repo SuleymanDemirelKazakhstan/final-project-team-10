@@ -19,3 +19,7 @@ Next step:
 Myrzabek Darkhan
 - Created new service for sending ready photos to user via email. 
 - All statuses are done, now we have full picture of image processing
+
+Next step:
+- Docker
+- Minimize dependency injection
