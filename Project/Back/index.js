@@ -18,7 +18,7 @@ let transporter = nodemailer.createTransport({
 });
 
 
-const db = mongo.connect("mongodb://localhost:27017/HUETA?authSource=admin", function(err, response) {
+const db = mongo.connect("mongodb://localhost:27017/?authSource=admin", function(err, response) {
     if (err) {
         console.log(err);
     } else {
