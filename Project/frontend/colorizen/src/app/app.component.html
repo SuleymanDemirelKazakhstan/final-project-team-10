@@ -15,6 +15,27 @@
   </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">У вас получилось!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-sm-center">Ваши фотографии уже в обработке. Ожидайте их у себя на почте!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--====== PRELOADER PART ENDS ======-->
 
 <!--====== HEADER PART START ======-->
@@ -41,25 +62,28 @@
                   <a class="page-scroll" href="#home">Главная</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#features">Features</a>
+                  <a class="page-scroll" href="#features">Особенности</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#about">About</a>
+                  <a class="page-scroll" href="#about">Примеры</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#facts">Why</a>
+                  <a class="page-scroll" href="#facts">Как работает?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#team">Team</a>
+                  <a class="page-scroll" href="#team">Команда</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#blog">Blog</a>
+                  <a class="page-scroll" href="#blog">Блог</a>
                 </li>
+<!--                <li class="nav-item">-->
+<!--                  <a class="page-scroll" href="#blog">Blog</a>-->
+<!--                </li>-->
               </ul>
             </div> <!-- navbar collapse -->
 
             <div class="navbar-btn d-none d-sm-inline-block">
-              <a class="main-btn" data-scroll-nav="0" href="#pricing">Войти в кабинет</a>
+              <a class="main-btn" data-scroll-nav="0" href="#pricing">Вопросы? Пиши</a>
             </div>
           </nav> <!-- navbar -->
         </div>
@@ -74,15 +98,13 @@
           <div class="header-hero-content text-center">
             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Colourizen</h3>
             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">AI-сервис, который делает ЧБ снимки цветными</h2>
-            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-<!--            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>-->
-          </div> <!-- header hero content -->
+           </div> <!-- header hero content -->
         </div>
       </div> <!-- row -->
       <div class="row">
         <div class="col-lg-12">
           <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
-            <app-uploader></app-uploader>
+            <app-upload-form class="uploading"></app-upload-form>
           </div> <!-- header hero image -->
         </div>
       </div> <!-- row -->
@@ -193,9 +215,9 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title">Восстановление <span>фото</span></h3>
+            <h3 class="title">Магия новых <span>технологий</span></h3>
           </div> <!-- section title -->
-          <p class="text">Colorizen восстанавливает фото - удаляет шум, восстанавливает лицо, общее восстановление.</p>
+          <p class="text">За несколько кликов вы сможете прикоснуться к волшебству технологий машинного обучения</p>
 <!--          <a href="#" class="main-btn">Try it Free</a>-->
         </div> <!-- about content -->
       </div>
@@ -232,9 +254,9 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title">Окрашивание черно-белых видео<span> (в платном тарифе)</span></h3>
+            <h3 class="title">Окрашивание черно-белых <span> фотографий</span></h3>
           </div> <!-- section title -->
-          <p class="text">Colorizen умеет раскрашивать видео.</p>
+          <p class="text">Раскрасьте сотни своих семейных фотографий за несколько минут.</p>
 <!--          <a href="#" class="main-btn">Try it Free</a>-->
         </div> <!-- about content -->
       </div>
@@ -264,15 +286,21 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title"><span>Crafted for</span> SaaS, App and Software Landing Page</h3>
+            <h3 class="title"><span>Colorizen</span> восстанавливает фотографии</h3>
           </div> <!-- section title -->
-          <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-<!--          <a href="#" class="main-btn">Try it Free</a>-->
+          <p class="text">Удаляет шум, восстанавливает лицо, общее восстановление.</p>
         </div> <!-- about content -->
       </div>
       <div class="col-lg-6">
         <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
-          <img src="assets/images/about3.svg" alt="about">
+          <two-up class="my-two-up">
+            <div>
+              <img src="assets/images/bw_5.jpg" alt="" />
+            </div>
+            <div>
+              <img src="assets/images/bw_6.jpg" alt="" />
+            </div>
+          </two-up>
         </div> <!-- about image -->
       </div>
     </div> <!-- row -->
@@ -312,7 +340,7 @@
               <div class="line"></div>
               <h3 class="title">А как <span> это работает?</span></h3>
             </div> <!-- section title -->
-            <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <p class="text">Мы используем state of the art technologies в сфере искусственного интеллекта и постарались получить самые точные результаты</p>
           </div> <!-- counter content -->
           <div class="row no-gutters">
             <div class="col-4">
@@ -327,7 +355,7 @@
               <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
                 <div class="counter-items text-center">
                   <span class="count"><span class="counter">10 </span> сек.</span>
-                  <p class="text">ср.время обработки</p>
+                  <p class="text">время обработки</p>
                 </div>
               </div> <!-- single counter -->
             </div>
@@ -382,7 +410,7 @@
       <div class="col-lg-3 col-md-7 col-sm-8">
         <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="team-image">
-            <img src="assets/images/team-2.png" alt="Team">
+            <img src="assets/images/team-2.jpg" alt="Team">
             <div class="social">
               <ul>
                 <li><a href="#"><i class="lni-github-original"></i></a></li>
@@ -393,14 +421,14 @@
           </div>
           <div class="team-content">
             <h5 class="holder-name"><a href="#">Максим Колесников</a></h5>
-            <p class="text">DSML инженер, неповторимый оригинал</p>
+            <p class="text">DSML инженер</p>
           </div>
         </div> <!-- single team -->
       </div>
       <div class="col-lg-3 col-md-7 col-sm-8">
         <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
           <div class="team-image">
-            <img src="assets/images/team-3.png" alt="Team">
+            <img src="assets/images/team-3.jpg" alt="Team">
             <div class="social">
               <ul>
                 <li><a href="#"><i class="lni-github-original"></i></a></li>
@@ -419,7 +447,7 @@
       <div class="col-lg-3 col-md-7 col-sm-8">
         <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
           <div class="team-image">
-            <img src="assets/images/team-4.png" alt="Team">
+            <img src="assets/images/team-4.jpg" alt="Team">
             <div class="social">
               <ul>
                 <li><a href="#"><i class="lni-github-original"></i></a></li>
@@ -430,10 +458,7 @@
           </div>
           <div class="team-content">
             <h5 class="holder-name"><a href="#">Мырзабек Дархан</a></h5>
-            <p class="text">в семье не без урода
-            <br>
-              жалкая пародия
-            </p>
+            <p class="text">Backend разработчик</p>
           </div>
         </div> <!-- single team -->
       </div>
@@ -443,148 +468,148 @@
 
 <!--====== TEAM PART ENDS ======-->
 
-<!--====== TESTIMONIAL PART START ======-->
+<!--&lt;!&ndash;====== TESTIMONIAL PART START ======&ndash;&gt;-->
 
-<section id="testimonial" class="testimonial-area pt-120">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-5">
-        <div class="section-title text-center pb-40">
-          <div class="line m-auto"></div>
-          <h3 class="title">Отзывы<span> пользователей</span></h3>
-        </div> <!-- section title -->
-      </div>
-    </div> <!-- row -->
-    <div class="row testimonial-active wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">
-      <div class="col-lg-4">
-        <div class="single-testimonial">
-          <div class="testimonial-review d-flex align-items-center justify-content-between">
-            <div class="quota">
-              <i class="lni-quotation"></i>
-            </div>
-            <div class="star">
-              <ul>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="testimonial-text">
-            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
-          </div>
-          <div class="testimonial-author d-flex align-items-center">
-            <div class="author-image">
-              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">
-              <img class="author" src="assets/images/author-1.png" alt="author">
-            </div>
-            <div class="author-content media-body">
-              <h6 class="holder-name">Jenny Deo</h6>
-              <p class="text">CEO, SpaceX</p>
-            </div>
-          </div>
-        </div> <!-- single testimonial -->
-      </div>
-      <div class="col-lg-4">
-        <div class="single-testimonial">
-          <div class="testimonial-review d-flex align-items-center justify-content-between">
-            <div class="quota">
-              <i class="lni-quotation"></i>
-            </div>
-            <div class="star">
-              <ul>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="testimonial-text">
-            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
-          </div>
-          <div class="testimonial-author d-flex align-items-center">
-            <div class="author-image">
-              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">
-              <img class="author" src="assets/images/author-2.png" alt="author">
-            </div>
-            <div class="author-content media-body">
-              <h6 class="holder-name">Marjin Otte</h6>
-              <p class="text">UX Specialist, Yoast</p>
-            </div>
-          </div>
-        </div> <!-- single testimonial -->
-      </div>
-      <div class="col-lg-4">
-        <div class="single-testimonial">
-          <div class="testimonial-review d-flex align-items-center justify-content-between">
-            <div class="quota">
-              <i class="lni-quotation"></i>
-            </div>
-            <div class="star">
-              <ul>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="testimonial-text">
-            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
-          </div>
-          <div class="testimonial-author d-flex align-items-center">
-            <div class="author-image">
-              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">
-              <img class="author" src="assets/images/author-3.png" alt="author">
-            </div>
-            <div class="author-content media-body">
-              <h6 class="holder-name">David Smith</h6>
-              <p class="text">CTO, Alphabet</p>
-            </div>
-          </div>
-        </div> <!-- single testimonial -->
-      </div>
-      <div class="col-lg-4">
-        <div class="single-testimonial">
-          <div class="testimonial-review d-flex align-items-center justify-content-between">
-            <div class="quota">
-              <i class="lni-quotation"></i>
-            </div>
-            <div class="star">
-              <ul>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-                <li><i class="lni-star-filled"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="testimonial-text">
-            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
-          </div>
-          <div class="testimonial-author d-flex align-items-center">
-            <div class="author-image">
-              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">
-              <img class="author" src="assets/images/author-2.png" alt="author">
-            </div>
-            <div class="author-content media-body">
-              <h6 class="holder-name">Fajar Siddiq</h6>
-              <p class="text">COO, MakerFlix</p>
-            </div>
-          </div>
-        </div> <!-- single testimonial -->
-      </div>
-    </div> <!-- row -->
-  </div> <!-- container -->
-</section>
+<!--<section id="testimonial" class="testimonial-area pt-120">-->
+<!--  <div class="container">-->
+<!--    <div class="row justify-content-center">-->
+<!--      <div class="col-lg-5">-->
+<!--        <div class="section-title text-center pb-40">-->
+<!--          <div class="line m-auto"></div>-->
+<!--          <h3 class="title">Отзывы<span> пользователей</span></h3>-->
+<!--        </div> &lt;!&ndash; section title &ndash;&gt;-->
+<!--      </div>-->
+<!--    </div> &lt;!&ndash; row &ndash;&gt;-->
+<!--    <div class="row testimonial-active wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="single-testimonial">-->
+<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
+<!--            <div class="quota">-->
+<!--              <i class="lni-quotation"></i>-->
+<!--            </div>-->
+<!--            <div class="star">-->
+<!--              <ul>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="testimonial-text">-->
+<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
+<!--          </div>-->
+<!--          <div class="testimonial-author d-flex align-items-center">-->
+<!--            <div class="author-image">-->
+<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
+<!--              <img class="author" src="assets/images/author-1.png" alt="author">-->
+<!--            </div>-->
+<!--            <div class="author-content media-body">-->
+<!--              <h6 class="holder-name">Jenny Deo</h6>-->
+<!--              <p class="text">CEO, SpaceX</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="single-testimonial">-->
+<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
+<!--            <div class="quota">-->
+<!--              <i class="lni-quotation"></i>-->
+<!--            </div>-->
+<!--            <div class="star">-->
+<!--              <ul>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="testimonial-text">-->
+<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
+<!--          </div>-->
+<!--          <div class="testimonial-author d-flex align-items-center">-->
+<!--            <div class="author-image">-->
+<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
+<!--              <img class="author" src="assets/images/author-2.png" alt="author">-->
+<!--            </div>-->
+<!--            <div class="author-content media-body">-->
+<!--              <h6 class="holder-name">Marjin Otte</h6>-->
+<!--              <p class="text">UX Specialist, Yoast</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="single-testimonial">-->
+<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
+<!--            <div class="quota">-->
+<!--              <i class="lni-quotation"></i>-->
+<!--            </div>-->
+<!--            <div class="star">-->
+<!--              <ul>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="testimonial-text">-->
+<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
+<!--          </div>-->
+<!--          <div class="testimonial-author d-flex align-items-center">-->
+<!--            <div class="author-image">-->
+<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
+<!--              <img class="author" src="assets/images/author-3.png" alt="author">-->
+<!--            </div>-->
+<!--            <div class="author-content media-body">-->
+<!--              <h6 class="holder-name">David Smith</h6>-->
+<!--              <p class="text">CTO, Alphabet</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="single-testimonial">-->
+<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
+<!--            <div class="quota">-->
+<!--              <i class="lni-quotation"></i>-->
+<!--            </div>-->
+<!--            <div class="star">-->
+<!--              <ul>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--                <li><i class="lni-star-filled"></i></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="testimonial-text">-->
+<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
+<!--          </div>-->
+<!--          <div class="testimonial-author d-flex align-items-center">-->
+<!--            <div class="author-image">-->
+<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
+<!--              <img class="author" src="assets/images/author-2.png" alt="author">-->
+<!--            </div>-->
+<!--            <div class="author-content media-body">-->
+<!--              <h6 class="holder-name">Fajar Siddiq</h6>-->
+<!--              <p class="text">COO, MakerFlix</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
+<!--      </div>-->
+<!--    </div> &lt;!&ndash; row &ndash;&gt;-->
+<!--  </div> &lt;!&ndash; container &ndash;&gt;-->
+<!--</section>-->
 
-<!--====== TESTIMONIAL PART ENDS ======-->
+<!--&lt;!&ndash;====== TESTIMONIAL PART ENDS ======&ndash;&gt;-->
 
 <!--====== BLOG PART START ======-->
 
@@ -678,27 +703,28 @@
         <div class="col-lg-5 col-md-7 col-sm-7">
           <div class="footer-link d-flex mt-50 justify-content-md-between">
             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="footer-title">
-                <h4 class="title">Главное</h4>
-              </div>
-              <ul class="link">
-                <li><a href="#">Road Map</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
+<!--              <div class="footer-title">-->
+<!--                <h4 class="title">Главное</h4>-->
+<!--              </div>-->
+<!--              <ul class="link">-->
+<!--                <li><a href="#">Road Map</a></li>-->
+<!--                <li><a href="#">Privacy Policy</a></li>-->
+<!--                <li><a href="#">Refund Policy</a></li>-->
+<!--                <li><a href="#">Terms of Service</a></li>-->
+<!--                <li><a href="#">Pricing</a></li>-->
+<!--              </ul>-->
             </div> <!-- footer wrapper -->
             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
               <div class="footer-title">
                 <h4 class="title">Разделы</h4>
               </div>
               <ul class="link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Особенности</a></li>
+                <li><a href="#">Примеры</a></li>
+                <li><a href="#">Как работает?</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Блог</a></li>
               </ul>
             </div> <!-- footer wrapper -->
           </div> <!-- footer link -->

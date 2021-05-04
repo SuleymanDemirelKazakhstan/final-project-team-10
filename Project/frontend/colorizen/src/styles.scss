@@ -2,7 +2,7 @@
 /*===========================
      01.COMMON css
 ===========================*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -585,7 +585,7 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .nav-item a {
     display: block;
@@ -1489,3 +1489,9 @@ p {
   display: none; }
 .back-to-top:hover {
   color: #fff; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

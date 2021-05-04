@@ -1,0 +1,152 @@
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  /* 20px */
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+  display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+  /* pointer-events: none; */
+  /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  /* 4px */
+  margin-right: 0.25em;
+  /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+  color: #f1e5e6;
+  background-color: #d3394c;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: #722040;
+}
+
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/upload.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1171px;
+  height: 503px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inputs {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailInput {
+  width: 370px;
+  height: 50px;
+  background: #191b2b;
+  color: white;
+  border: 0;
+  border: 1px solid #D2394D;
+  outline: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  caret-color: #D2394D;
+  margin-bottom: 30px;
+}
+
+.controls {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#resetBtn {
+  background-color: #262626;
+}
+
+#resetBtn:hover {
+  background-color: #1a1a1a;
+}
+
+.imageCount {
+  opacity: 0;
+
+}
+
+
+
+.controlButton {
+  width: 150px;
+  height: 50px;
+  background-color: #00B74A;
+  //border: 1px solid white;
+  color: white;
+  outline: none;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+
+}
+
+.controlButton:hover {
+  background-color: #04d052;
+  border-radius: 25px;
+}

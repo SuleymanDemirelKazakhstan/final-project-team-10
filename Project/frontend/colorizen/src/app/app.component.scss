@@ -31,3 +31,17 @@ two-up:defined {
 body {
   padding: 2rem;
 }
+.uploading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
