@@ -38,7 +38,7 @@ def colorize(data):
     images_res=[]
     for index,img in enumerate(images):
         img=colorizer.get_transformed_image(img, render_factor)
-        img.save("result/{}.jpg".format(id[index]))   
+        # img.save("result/{}.jpg".format(id[index]))   
         im_file = BytesIO()
         img.save(im_file, format="JPEG")
         im_bytes = im_file.getvalue() 
@@ -49,5 +49,5 @@ def colorize(data):
     "readyData": images_res
      
     }
-    requests.put('http://192.168.1.208:8080/api/photosDone/{}'.format(email),json=json)
+    requests.put('https://colorizen-server.herokuapp.com/api/photosDone/{}'.format(email),json=json)
     return 'done'
