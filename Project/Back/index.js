@@ -6,11 +6,14 @@ const cors = require('cors')
 const rp = require('request-promise');
 const nodemailer = require('nodemailer');
 var base64Img = require('base64-img');
+const PORT = process.env.PORT || 5000
 
 let toAdd;
 
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, 
     auth: {
         user: 'colorizenio@gmail.com',
         pass: 'DiplomaProject2021'
@@ -18,7 +21,7 @@ let transporter = nodemailer.createTransport({
 });
 
 
-const db = mongo.connect("mongodb://localhost:27017/?authSource=admin", function(err, response) {
+const db = mongo.connect("mongodb+srv://colorized:ColorIzen2021@cluster0.ovcay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", function(err, response) {
     if (err) {
         console.log(err);
     } else {
@@ -61,6 +64,8 @@ app.post("/api/newPhotoUpload", function(req, res) {
         email,
         data
     }
+
+    console.log('poluchil', toAdd)
     const mod = new model(toAdd);
 
     // console.log('model', mod)
@@ -73,11 +78,11 @@ app.post("/api/newPhotoUpload", function(req, res) {
         }
     });
 
-    // console.log('maxim', toAdd)
+    // console.log('maxim', toAdd)s
 
     var options = {
         method: 'POST',
-        uri: 'http://192.168.1.223:8000/colorize',
+        uri: 'http://77.223.98.117:8000/colorize',
         body: toAdd,
         json: true // Automatically stringifies the body to JSON
     };
@@ -155,7 +160,6 @@ app.put("/api/photosDone/:email", function(req, res) {
 
 
 
-app.listen(8080, function() {
-
-    console.log('Colorizen HERE! Port: 8080')
+app.listen(PORT, function() {
+    console.log('Colorizen HERE! Port: 5000')
 })

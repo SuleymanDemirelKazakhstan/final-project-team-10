@@ -18,6 +18,8 @@ export class UploadFormComponent implements OnInit {
   arrayOfImages: any[] = []
   // @ts-ignore
   form: FormGroup
+  exceptionThrow;
+  statusMessage = ''
 
   // @ts-ignore
 
@@ -39,12 +41,14 @@ export class UploadFormComponent implements OnInit {
 
 
   handleUpload(event) {
-    console.log(event.target.files)
+    const files = event.target.files[0]
+    console.log(files)
     this.imageCount = event.target.files.length
 
     var p = 0
     var i;
     for (i = 0; i < event.target.files.length; i++) {
+
       const reader = new FileReader();
       reader.readAsDataURL(event.target.files[i]);
       reader.onload = () => {
@@ -57,7 +61,7 @@ export class UploadFormComponent implements OnInit {
   }
 
   getHello() {
-    this.http.get('http://localhost:8080/api/testInfo').subscribe(data=>{
+    this.http.get('http://colorizen-server.herokuapp.com/api/testInfo').subscribe(data=>{
       console.log(data)
     })
     setTimeout(()=>{
@@ -66,16 +70,18 @@ export class UploadFormComponent implements OnInit {
     }, 2000)
   }
 
-  sendNudes() {
+  sendPhotos(event) {
     let body = this.arrayOfImages
+    this.statusMessage = 'Your photos have been sent for processing!'
+    this.imageCount = false
 
-    this.http.post('http://localhost:8080/api/newPhotoUpload', {
+
+    this.http.post('http://colorizen-server.herokuapp.com/api/newPhotoUpload', {
       "email": this.userEmail,
       "data": this.arrayOfImages
     }).subscribe(data=>{
       console.log(data)
     })
-    console.log('типа отправил')
     this.resetForm()
   }
 

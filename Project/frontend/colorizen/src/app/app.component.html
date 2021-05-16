@@ -16,21 +16,81 @@
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- Modal for successfull upload -->
+<div class="modal fade" id="examplModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">У вас получилось!</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">You did it!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p class="text-sm-center">Ваши фотографии уже в обработке. Ожидайте их у себя на почте!</p>
+        <p class="text-sm-center">Your photos are already processed. Expect them in your mail!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="aboutPhotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutPhotoLabel">How colorizen works?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Generative adversarial networks(GANs) - are a form of generative models. These models consist of two neural networks, one of which is designated as a generator(G) and a discriminator(D). These models are trained against each other. The purpose of the generator is to generate fake samples from the input Gaussian noise.  Unlike a generator, the discriminator model evaluates which data is fake and which is genuine.
+        </p>
+        <img src="../assets/images/scheme.jpeg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="privatePolicyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privatePolicyModalLabel">Private Policy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Private Policy</h2>
+        <p>Effective date: December 15, 2018
+          colorizen ("us", "we", or "our") operates the colorizen website (the "Service").
+          This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+          We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from colorizen</p>
+        <h2>Information Collection and Use</h2>
+        <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+        <h3>Types of Data Collected</h3>
+        <h4>Personal Data</h4>
+        <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+        <ul>
+          <li>Email address</li>
+          <li>Your photos</li>
+        </ul>
+        <h3>ATTENTION!</h3>
+        <p>We do not collect or use cookies. We do not collect data about how you use our site.</p>
+        <h2>Security Of Data</h2>
+        <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. Therefore, we destroy and do not store your files on local storage for more than two weeks.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us: colorizen@gmail.com</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -59,22 +119,22 @@
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
               <ul id="nav" class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="page-scroll" href="#home">Главная</a>
+                  <a class="page-scroll" href="#home">Main</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#features">Особенности</a>
+                  <a class="page-scroll" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#about">Примеры</a>
+                  <a class="page-scroll" href="#about">Examples</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#facts">Как работает?</a>
+                  <a class="page-scroll" href="#facts">How it works?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#team">Команда</a>
+                  <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#blog">Блог</a>
+                  <a class="page-scroll" href="#blog">Blog</a>
                 </li>
 <!--                <li class="nav-item">-->
 <!--                  <a class="page-scroll" href="#blog">Blog</a>-->
@@ -83,7 +143,7 @@
             </div> <!-- navbar collapse -->
 
             <div class="navbar-btn d-none d-sm-inline-block">
-              <a class="main-btn" data-scroll-nav="0" href="#pricing">Вопросы? Пиши</a>
+              <a class="main-btn" data-scroll-nav="0" href="#pricing">Question?</a>
             </div>
           </nav> <!-- navbar -->
         </div>
@@ -97,7 +157,7 @@
         <div class="col-lg-8">
           <div class="header-hero-content text-center">
             <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Colourizen</h3>
-            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">AI-сервис, который делает ЧБ снимки цветными</h2>
+            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">AI-service, that colors black and white photos</h2>
            </div> <!-- header hero content -->
         </div>
       </div> <!-- row -->
@@ -115,35 +175,6 @@
 
 <!--====== HEADER PART ENDS ======-->
 
-<!--====== BRAMD PART START ======-->
-
-<!--<div class="brand-area pt-90">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12">-->
-<!--        <div class="brand-logo d-flex align-items-center justify-content-center justify-content-md-between">-->
-<!--          <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">-->
-<!--            <img src="assets/images/brand-1.png" alt="brand">-->
-<!--          </div> &lt;!&ndash; single logo &ndash;&gt;-->
-<!--          <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">-->
-<!--            <img src="assets/images/brand-2.png" alt="brand">-->
-<!--          </div> &lt;!&ndash; single logo &ndash;&gt;-->
-<!--          <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">-->
-<!--            <img src="assets/images/brand-3.png" alt="brand">-->
-<!--          </div> &lt;!&ndash; single logo &ndash;&gt;-->
-<!--          <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">-->
-<!--            <img src="assets/images/brand-4.png" alt="brand">-->
-<!--          </div> &lt;!&ndash; single logo &ndash;&gt;-->
-<!--          <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">-->
-<!--            <img src="assets/images/brand-5.png" alt="brand">-->
-<!--          </div> &lt;!&ndash; single logo &ndash;&gt;-->
-<!--        </div> &lt;!&ndash; brand logo &ndash;&gt;-->
-<!--      </div>-->
-<!--    </div>   &lt;!&ndash; row &ndash;&gt;-->
-<!--  </div> &lt;!&ndash; container &ndash;&gt;-->
-<!--</div>-->
-
-<!--====== BRAMD PART ENDS ======-->
 
 <!--====== SERVICES PART START ======-->
 
@@ -153,7 +184,7 @@
       <div class="col-lg-10">
         <div class="section-title text-center pb-40">
           <div class="line m-auto"></div>
-          <h3 class="title">Colorize.cc - AI-сервис, <span> который раскрашивает черно-белые фото и видео</span></h3>
+          <h3 class="title">Colorize.cc - AI-service, <span> that colors black and white photos</span></h3>
         </div> <!-- section title -->
       </div>
     </div> <!-- row -->
@@ -215,9 +246,9 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title">Магия новых <span>технологий</span></h3>
+            <h3 class="title">The magic of <span>new technologies</span></h3>
           </div> <!-- section title -->
-          <p class="text">За несколько кликов вы сможете прикоснуться к волшебству технологий машинного обучения</p>
+          <p class="text">In a few clicks, you can touch the magic of machine learning technologies</p>
 <!--          <a href="#" class="main-btn">Try it Free</a>-->
         </div> <!-- about content -->
       </div>
@@ -254,9 +285,9 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title">Окрашивание черно-белых <span> фотографий</span></h3>
+            <h3 class="title">Coloring black and white <span> photos</span></h3>
           </div> <!-- section title -->
-          <p class="text">Раскрасьте сотни своих семейных фотографий за несколько минут.</p>
+          <p class="text">Color hundreds of your family photos in minutes.</p>
 <!--          <a href="#" class="main-btn">Try it Free</a>-->
         </div> <!-- about content -->
       </div>
@@ -286,9 +317,9 @@
         <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
           <div class="section-title">
             <div class="line"></div>
-            <h3 class="title"><span>Colorizen</span> восстанавливает фотографии</h3>
+            <h3 class="title"><span>Colorizen</span> restores photos</h3>
           </div> <!-- section title -->
-          <p class="text">Удаляет шум, восстанавливает лицо, общее восстановление.</p>
+          <p class="text">Removes noise, restores face, general recovery.</p>
         </div> <!-- about content -->
       </div>
       <div class="col-lg-6">
@@ -338,16 +369,16 @@
           <div class="counter-content">
             <div class="section-title">
               <div class="line"></div>
-              <h3 class="title">А как <span> это работает?</span></h3>
+              <h3 class="title">How does <span> it work?</span></h3>
             </div> <!-- section title -->
-            <p class="text">Мы используем state of the art technologies в сфере искусственного интеллекта и постарались получить самые точные результаты</p>
+            <p class="text">We use state of the art technologies in the field of artificial intelligence and tried to get the most accurate results.</p>
           </div> <!-- counter content -->
           <div class="row no-gutters">
             <div class="col-4">
               <div class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
                 <div class="counter-items text-center">
                   <span class="count"><span class="counter">96</span>%</span>
-                  <p class="text">точность</p>
+                  <p class="text">Accuracy</p>
                 </div>
               </div> <!-- single counter -->
             </div>
@@ -355,15 +386,15 @@
               <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
                 <div class="counter-items text-center">
                   <span class="count"><span class="counter">10 </span> сек.</span>
-                  <p class="text">время обработки</p>
+                  <p class="text">Time of processing</p>
                 </div>
               </div> <!-- single counter -->
             </div>
             <div class="col-4">
               <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
                 <div class="counter-items text-center">
-                  <span class="count"><span class="counter">10</span></span>
-                  <p class="text">фото обработано</p>
+                  <span class="count"><span class="counter">424</span></span>
+                  <p class="text">Photos ready</p>
                 </div>
               </div> <!-- single counter -->
             </div>
@@ -384,7 +415,7 @@
       <div class="col-lg-5">
         <div class="section-title text-center pb-30">
           <div class="line m-auto"></div>
-          <h3 class="title">Команда разработки</h3>
+          <h3 class="title">Team</h3>
         </div> <!-- section title -->
       </div>
     </div> <!-- row -->
@@ -395,15 +426,14 @@
             <img src="assets/images/team-1.png" alt="Team">
             <div class="social">
               <ul>
-                <li><a href="#"><i class="lni-github-original"></i></a></li>
-                <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                <li><a href="https://github.com/mangocreatorz"><i class="lni-github-original"></i></a></li>
                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="team-content">
-            <h5 class="holder-name"><a href="#">Кириченко Сергей</a></h5>
-            <p class="text">UX/UI дизайнер, Frontend разработчик</p>
+            <h5 class="holder-name"><a href="#">Kirichenko Sergey</a></h5>
+            <p class="text">UX/UI degigner, Frontend developer</p>
           </div>
         </div> <!-- single team -->
       </div>
@@ -413,33 +443,31 @@
             <img src="assets/images/team-2.jpg" alt="Team">
             <div class="social">
               <ul>
-                <li><a href="#"><i class="lni-github-original"></i></a></li>
-                <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                <li><a href="https://github.com/macsifan"><i class="lni-github-original"></i></a></li>
                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="team-content">
-            <h5 class="holder-name"><a href="#">Максим Колесников</a></h5>
-            <p class="text">DSML инженер</p>
+            <h5 class="holder-name"><a href="#">Kolesnikov Maxim</a></h5>
+            <p class="text">DSML engineer</p>
           </div>
         </div> <!-- single team -->
       </div>
       <div class="col-lg-3 col-md-7 col-sm-8">
         <div class="single-team text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
           <div class="team-image">
-            <img src="assets/images/team-3.jpg" alt="Team">
+            <img src="assets/images/team-3.png" alt="Team">
             <div class="social">
               <ul>
-                <li><a href="#"><i class="lni-github-original"></i></a></li>
-                <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                <li><a href="https://github.com/kdiAAA"><i class="lni-github-original"></i></a></li>
                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="team-content">
-            <h5 class="holder-name"><a href="#">Карманов Адильбек</a></h5>
-            <p class="text">DSML инженер</p>
+            <h5 class="holder-name"><a href="#">Karmanov Adilbek</a></h5>
+            <p class="text">DSML engineer</p>
           </div>
         </div> <!-- single team -->
       </div>
@@ -450,15 +478,14 @@
             <img src="assets/images/team-4.jpg" alt="Team">
             <div class="social">
               <ul>
-                <li><a href="#"><i class="lni-github-original"></i></a></li>
-                <li><a href="#"><i class="lni-instagram-filled"></i></a></li>
+                <li><a href="https://github.com/MyrzabekDarkhan"><i class="lni-github-original"></i></a></li>
                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="team-content">
-            <h5 class="holder-name"><a href="#">Мырзабек Дархан</a></h5>
-            <p class="text">Backend разработчик</p>
+            <h5 class="holder-name"><a href="#">Myrzabek Darkhan</a></h5>
+            <p class="text">Backend developer</p>
           </div>
         </div> <!-- single team -->
       </div>
@@ -468,148 +495,6 @@
 
 <!--====== TEAM PART ENDS ======-->
 
-<!--&lt;!&ndash;====== TESTIMONIAL PART START ======&ndash;&gt;-->
-
-<!--<section id="testimonial" class="testimonial-area pt-120">-->
-<!--  <div class="container">-->
-<!--    <div class="row justify-content-center">-->
-<!--      <div class="col-lg-5">-->
-<!--        <div class="section-title text-center pb-40">-->
-<!--          <div class="line m-auto"></div>-->
-<!--          <h3 class="title">Отзывы<span> пользователей</span></h3>-->
-<!--        </div> &lt;!&ndash; section title &ndash;&gt;-->
-<!--      </div>-->
-<!--    </div> &lt;!&ndash; row &ndash;&gt;-->
-<!--    <div class="row testimonial-active wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">-->
-<!--      <div class="col-lg-4">-->
-<!--        <div class="single-testimonial">-->
-<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
-<!--            <div class="quota">-->
-<!--              <i class="lni-quotation"></i>-->
-<!--            </div>-->
-<!--            <div class="star">-->
-<!--              <ul>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="testimonial-text">-->
-<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
-<!--          </div>-->
-<!--          <div class="testimonial-author d-flex align-items-center">-->
-<!--            <div class="author-image">-->
-<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
-<!--              <img class="author" src="assets/images/author-1.png" alt="author">-->
-<!--            </div>-->
-<!--            <div class="author-content media-body">-->
-<!--              <h6 class="holder-name">Jenny Deo</h6>-->
-<!--              <p class="text">CEO, SpaceX</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
-<!--      </div>-->
-<!--      <div class="col-lg-4">-->
-<!--        <div class="single-testimonial">-->
-<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
-<!--            <div class="quota">-->
-<!--              <i class="lni-quotation"></i>-->
-<!--            </div>-->
-<!--            <div class="star">-->
-<!--              <ul>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="testimonial-text">-->
-<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
-<!--          </div>-->
-<!--          <div class="testimonial-author d-flex align-items-center">-->
-<!--            <div class="author-image">-->
-<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
-<!--              <img class="author" src="assets/images/author-2.png" alt="author">-->
-<!--            </div>-->
-<!--            <div class="author-content media-body">-->
-<!--              <h6 class="holder-name">Marjin Otte</h6>-->
-<!--              <p class="text">UX Specialist, Yoast</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
-<!--      </div>-->
-<!--      <div class="col-lg-4">-->
-<!--        <div class="single-testimonial">-->
-<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
-<!--            <div class="quota">-->
-<!--              <i class="lni-quotation"></i>-->
-<!--            </div>-->
-<!--            <div class="star">-->
-<!--              <ul>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="testimonial-text">-->
-<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
-<!--          </div>-->
-<!--          <div class="testimonial-author d-flex align-items-center">-->
-<!--            <div class="author-image">-->
-<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
-<!--              <img class="author" src="assets/images/author-3.png" alt="author">-->
-<!--            </div>-->
-<!--            <div class="author-content media-body">-->
-<!--              <h6 class="holder-name">David Smith</h6>-->
-<!--              <p class="text">CTO, Alphabet</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
-<!--      </div>-->
-<!--      <div class="col-lg-4">-->
-<!--        <div class="single-testimonial">-->
-<!--          <div class="testimonial-review d-flex align-items-center justify-content-between">-->
-<!--            <div class="quota">-->
-<!--              <i class="lni-quotation"></i>-->
-<!--            </div>-->
-<!--            <div class="star">-->
-<!--              <ul>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--                <li><i class="lni-star-filled"></i></li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="testimonial-text">-->
-<!--            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>-->
-<!--          </div>-->
-<!--          <div class="testimonial-author d-flex align-items-center">-->
-<!--            <div class="author-image">-->
-<!--              <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">-->
-<!--              <img class="author" src="assets/images/author-2.png" alt="author">-->
-<!--            </div>-->
-<!--            <div class="author-content media-body">-->
-<!--              <h6 class="holder-name">Fajar Siddiq</h6>-->
-<!--              <p class="text">COO, MakerFlix</p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div> &lt;!&ndash; single testimonial &ndash;&gt;-->
-<!--      </div>-->
-<!--    </div> &lt;!&ndash; row &ndash;&gt;-->
-<!--  </div> &lt;!&ndash; container &ndash;&gt;-->
-<!--</section>-->
-
-<!--&lt;!&ndash;====== TESTIMONIAL PART ENDS ======&ndash;&gt;-->
 
 <!--====== BLOG PART START ======-->
 
@@ -619,7 +504,7 @@
       <div class="col-lg-6">
         <div class="section-title pb-35">
           <div class="line"></div>
-          <h3 class="title"><span>Советуем</span> ознакомиться</h3>
+          <h3 class="title"><span>Recommend to</span> read</h3>
         </div> <!-- section title -->
       </div>
     </div> <!-- row -->
@@ -630,8 +515,8 @@
             <img src="assets/images/blog-1.jpg" alt="blog">
           </div>
           <div class="blog-content">
-            <p class="text">Как работает окрашивание видео?</p>
-            <a class="more" href="#">Узнать <i class="lni-chevron-right"></i></a>
+            <p class="text">How colorizen works?</p>
+            <a class="more" href="#" data-toggle="modal" data-target="#aboutPhotoModal">Learn <i class="lni-chevron-right"></i></a>
           </div>
         </div> <!-- single blog -->
       </div>
@@ -642,8 +527,8 @@
           </div>
           <div class="blog-content">
 
-            <p class="text">Корпоративные решения</p>
-            <a class="more" href="#">Узнать <i class="lni-chevron-right"></i></a>
+            <p class="text">Check our documentation</p>
+            <a class="more" href="https://github.com/SuleymanDemirelKazakhstan/final-project-team-10/blob/main/Reports/Documentation_colorizen.pdf" target="_blank">Check <i class="lni-chevron-right"></i></a>
           </div>
         </div> <!-- single blog -->
       </div>
@@ -654,8 +539,8 @@
           </div>
           <div class="blog-content">
 
-            <p class="text">Политика конфиденциальности</p>
-            <a class="more" href="#">Узнать <i class="lni-chevron-right"></i></a>
+            <p class="text">Private Policy</p>
+            <a class="more" href="#" data-toggle="modal" data-target="#privatePolicyModal">Learn <i class="lni-chevron-right"></i></a>
           </div>
         </div> <!-- single blog -->
       </div>
@@ -673,14 +558,14 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="subscribe-content mt-45">
-            <h2 class="subscribe-title"><span>Подпишись на обновления!</span></h2>
+            <h2 class="subscribe-title"><span>Subscribe to news</span></h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="subscribe-form mt-50">
             <form action="#">
-              <input type="text" placeholder="Почту сюда">
-              <button class="main-btn">Подписаться!</button>
+              <input type="text" placeholder="Put your email here">
+              <button class="main-btn">Subscribe!</button>
             </form>
           </div>
         </div>
@@ -693,7 +578,7 @@
             <a class="logo" href="#">
               <img src="assets/images/logo.svg" alt="logo">
             </a>
-            <p class="text">AI-сервис, который раскрашивает черно-белые фото и видео. Разработано с любовью</p>
+            <p class="text">AI-service, that colors black and white photos. Designed with love ❤️</p>
             <ul class="social">
               <li><a href="#"><i class="lni-github-original"></i></a></li>
               <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
@@ -702,29 +587,17 @@
         </div>
         <div class="col-lg-5 col-md-7 col-sm-7">
           <div class="footer-link d-flex mt-50 justify-content-md-between">
-            <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-<!--              <div class="footer-title">-->
-<!--                <h4 class="title">Главное</h4>-->
-<!--              </div>-->
-<!--              <ul class="link">-->
-<!--                <li><a href="#">Road Map</a></li>-->
-<!--                <li><a href="#">Privacy Policy</a></li>-->
-<!--                <li><a href="#">Refund Policy</a></li>-->
-<!--                <li><a href="#">Terms of Service</a></li>-->
-<!--                <li><a href="#">Pricing</a></li>-->
-<!--              </ul>-->
-            </div> <!-- footer wrapper -->
             <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
               <div class="footer-title">
-                <h4 class="title">Разделы</h4>
+                <h4 class="title">Sections</h4>
               </div>
               <ul class="link">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Особенности</a></li>
-                <li><a href="#">Примеры</a></li>
-                <li><a href="#">Как работает?</a></li>
-                <li><a href="#">Команда</a></li>
-                <li><a href="#">Блог</a></li>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
               </ul>
             </div> <!-- footer wrapper -->
           </div> <!-- footer link -->
@@ -732,7 +605,7 @@
         <div class="col-lg-3 col-md-5 col-sm-5">
           <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
             <div class="footer-title">
-              <h4 class="title">Связаться</h4>
+              <h4 class="title">Connect</h4>
             </div>
             <ul class="contact">
               <li>help@colorizen.io</li>

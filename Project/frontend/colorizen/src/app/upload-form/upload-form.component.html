@@ -2,23 +2,24 @@
 
 
 <div class="box">
-
   <form [formGroup]="form" class="form-inputs">
     <div class="inputs">
-      <input formControlName="emailInput" type='text' placeholder="Твой Email" [(ngModel)]="userEmail" class="emailInput" [email]="true">
-
+      <input formControlName="emailInput" type='text' placeholder="Your email" [(ngModel)]="userEmail" class="emailInput" [email]="true">
+      <p class="validation-text" *ngIf="form.controls['emailInput'].invalid && form.controls['emailInput'].touched" [ngStyle]="{'color': 'red', 'margin': '0', 'margin-top': '-20px', 'margin-bottom': '20px'}">Enter correct email, dude</p>
       <input formControlName="imageInput" type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple [hidden]="true" (change)="handleUpload($event)" />
-      <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Выберите файлы&hellip;</span></label>
+      <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose files..</span></label>
+      <p class="validation-text">{{exceptionThrow}}</p>
     </div>
   </form>
 
-  <p>Поддержимаемые форматы: <strong>JPG</strong>, <strong>JPEG</strong>, <strong>PNG</strong></p>
-  <p>Максимальный размер файла: <strong>5 Mb</strong></p>
-  <h3 [ngStyle]="{'color': 'white'}" *ngIf="imageCount">Выбрано файлов: {{imageCount}}</h3>
+  <p>Supported files: <strong>JPG</strong>, <strong>JPEG</strong>, <strong>PNG</strong></p>
+  <p>Maximum file size: <strong>5 Mb</strong></p>
+  <p [ngStyle]="{'color': 'white', 'margin': '0'}" *ngIf="imageCount">Selected files: {{imageCount}}</p>
+  <p [ngStyle]="{'color': 'white', 'margin': '0'}">{{statusMessage}}</p>
 
   <div class="controls">
-    <button class="controlButton" id="resetBtn" (click)="getHello()">Сбросить</button>
-    <button (click)="getHello()" [disabled]="form.invalid" class="controlButton" data-toggle="modal" data-target="#exampleModalCenter" >Отправить</button>
+    <button class="controlButton" id="resetBtn" (click)="resetForm()">Reset</button>
+    <button (click)="sendPhotos($event)" [disabled]="form.invalid" class="controlButton">Make them bright!</button>
   </div>
 </div>
 

@@ -8,6 +8,7 @@
     "strict": true,
     "noImplicitReturns": false,
     "noImplicitAny": false,
+    "strictNullChecks": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,

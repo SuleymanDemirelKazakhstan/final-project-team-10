@@ -113,6 +113,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: -50px;
 }
 
 #resetBtn {
@@ -126,6 +127,10 @@
 .imageCount {
   opacity: 0;
 
+}
+
+.box p {
+  margin-top: -10px;
 }
 
 
@@ -149,4 +154,12 @@
 .controlButton:hover {
   background-color: #04d052;
   border-radius: 25px;
+}
+
+
+.validation-text {
+  display: block;
+  opacity: 1;
+  font-size: 12px;
+  color: red;
 }
