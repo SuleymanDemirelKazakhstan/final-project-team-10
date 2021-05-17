@@ -1,0 +1,39 @@
+## Plan:
+1. Create interaction scheme between front, back and model parts
+2. Choosing a language / framework for creating a backend: Node.js, Deno, .NET, PHP
+3. Select a database: MySql, Oracle, MongoDB, Redis, NoSQL. As a result, I chose MongoDB Atlas (cloud solution)
+4. Create schemes for MongoDB
+5. Start develop back with Express + Node + Mongo
+6. Create routes for model interaction
+7. Create service for 2 way request sending
+8. Create service for sending emails with ready photos to user
+9. Install CORS and solve CORS Troubles
+10. Set response statuses
+11. Dockerize/containerize server
+12. Deploy to VM
+13. Documentation
+
+## Month by month work:
+### January:
+- Create interaction scheme between front, back and model parts
+- Choosing a language / framework for creating a backend: Node.js, Deno, .NET, PHP
+- Select a database: MySql, Oracle, MongoDB, Redis, NoSQL. As a result, I chose MongoDB Atlas (cloud solution)
+
+
+### February:
+- Create schemes for MongoDB
+- Start develop back with Express + Node + Mongo
+- Create routes for model interaction
+
+### March:
+- Create service for 2 way request sending
+- Create service for sending emails with ready photos to user
+- Install CORS and solve CORS Troubles
+
+### April:
+- Set response statuses
+- Dockerize/containerize server
+- Deploy to VM
+- Documentation
+
+## Modified folder: backend
